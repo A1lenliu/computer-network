@@ -23,4 +23,8 @@
 5.删除文件
  rm 文件名.txt
  git checkout -- 文件名.txt(此语句也可以用来回复删除的文件，在commit语句之前)
+6.链接github
+ 只要本地作了提交，就可以通过如下命令
+  git push origin master
+ 把本地master分支的最新修改推送到github上了
 
