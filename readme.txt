@@ -31,6 +31,17 @@
  把本地master分支的最新修改推送到github上了
  由于远程库是空的，我们第一次推送master分支时，加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
 后面推送可以使用 git push
+ 注意：当远程仓库名改变后需要用
+ git remote set-url origin 仓库URL
+ 可以用git remote -v检查目前所关联的远程仓库名
 7.从远程库克隆
  git clone github地址
  克隆前注意现在所处目录，用pwd语句
+8.创建并合并分支
+ 每次提交，Git都把它们串成一条时间线，这条时间线就是一个分支。截止到目前，只有一条时间线，在Git里，这个分支叫主分支，即master分支。HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。
+ git checkout -b dev(创建并切换分支)
+= git branch dev 和 git checkout dev
+ git branch(查看分支，会列出所有的分支，当前分支前面会添加一个星号)
+  git merge dev(用于合并指定分支到当前分支上) 
+ git branch -d dev(删除dev分支)
+9.多人远程协同
