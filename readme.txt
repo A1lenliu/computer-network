@@ -18,6 +18,9 @@
     git reset --hard HEAD~N(回退N个版本)
     git reset --hard 版本号（回到指定版本） 
 4.撤销修改
- git checkout --文件名.txt(撤销在工作区的工作，在add语句执行之前的工作)
-5.
+ git checkout -- 文件名.txt(撤销在工作区的工作，在add语句执行之前的工作)
+ ”--“很重要，而且后面需要跟文件名时要加空格，否则无法识别
+5.删除文件
+ rm 文件名.txt
+ git checkout -- 文件名.txt(此语句也可以用来回复删除的文件，在commit语句之前)
 
