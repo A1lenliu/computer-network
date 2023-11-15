@@ -27,4 +27,6 @@
  只要本地作了提交，就可以通过如下命令
   git push origin master
  把本地master分支的最新修改推送到github上了
-
+7.从远程库克隆
+ git clone github地址
+ 克隆前注意现在所处目录，用pwd语句
