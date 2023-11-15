@@ -1,3 +1,8 @@
+cd 磁盘名:或 文件名（指定目录）
+eg. cd O:
+    cd mygit1
+pwd（查看当前目录）
+
 1.git add 文件名.txt（添加文件到暂存区）
 2.git commit -m "注释"（提交文件到仓库）
 3.git status(查看文件状况)
