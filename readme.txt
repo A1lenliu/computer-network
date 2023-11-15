@@ -2,7 +2,9 @@
  cd 磁盘名:或 文件名（指定目录）
  eg. cd O:
      cd mygit1
+ mkdir 版本库名（创建版本库）
  pwd（查看当前目录）
+ git init(将此库变成能被git管理的仓库)
 2.提交文件
  git add 文件名.txt（添加文件到暂存区）
  git commit -m "注释"（提交文件到仓库）
@@ -25,8 +27,10 @@
  git checkout -- 文件名.txt(此语句也可以用来回复删除的文件，在commit语句之前)
 6.链接github
  只要本地作了提交，就可以通过如下命令
-  git push origin master
+  git push -u origin master/main（代表分支名字）
  把本地master分支的最新修改推送到github上了
+ 由于远程库是空的，我们第一次推送master分支时，加上了 –u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
+后面推送可以使用 git push
 7.从远程库克隆
  git clone github地址
  克隆前注意现在所处目录，用pwd语句
